@@ -12,4 +12,4 @@ CMD java -jar /data/*.jar
 
 #copy hello world to docker image from builder image
 
-COPY --from=maven_build /tmp/target/erk-server-0.0.1.jar /data/erk-server-0.0.1.jar
+COPY --from=maven_build target/erk-server-0.0.1.jar data/erk-server-0.0.1.jar
